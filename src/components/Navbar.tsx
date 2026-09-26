@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Logo } from './Logo';
-import { Menu, X, Phone, Shield, ArrowRight, MapPin, CheckCircle } from 'lucide-react';
+import { Menu, X, Shield, ArrowRight, MapPin, CheckCircle } from 'lucide-react';
 
 interface NavbarProps {
   onOpenZipModal: () => void;
@@ -321,13 +321,6 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Drawer Footer Contact Bar */}
           <div className="p-5 sm:p-7 border-t border-white/10 bg-[#040405] text-center space-y-2 mt-auto">
-            <a
-              href="tel:18005552739"
-              className="inline-flex items-center justify-center gap-2 text-gold hover:text-white font-bold text-sm tracking-wider transition-colors"
-            >
-              <Phone className="w-4 h-4 text-gold" />
-              <span>(800) 555-APEX / (800) 555-2739</span>
-            </a>
             <p className="text-[11px] text-neutral-400 font-sans">
               24/7 Homeowner Dispatch & Support Across the USA
             </p>

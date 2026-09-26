@@ -128,11 +128,11 @@ export const Footer: React.FC<FooterProps> = ({
                   </span>
                 </div>
               </a>
-              <span className="flex items-center gap-2.5 text-neutral-300">
+              <span className="flex items-center gap-2.5 text-neutral-300 min-w-0">
                 <Mail className="w-4 h-4 text-gold flex-shrink-0" />
                 <a
                   href={`mailto:${CONTACT_EMAIL}`}
-                  className="hover:text-gold font-medium transition-colors"
+                  className="hover:text-gold font-medium transition-colors [overflow-wrap:anywhere] [word-break:break-word]"
                 >
                   {CONTACT_EMAIL}
                 </a>

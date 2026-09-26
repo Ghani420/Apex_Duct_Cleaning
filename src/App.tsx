@@ -118,7 +118,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#050505] text-white flex flex-col selection:bg-[#D4AF37] selection:text-black">
+    <div className="min-h-screen bg-[#050505] text-white flex flex-col selection:bg-[#D4AF37] selection:text-black overflow-x-hidden">
       {/* Sticky Premium Navbar */}
       <Navbar
         onOpenZipModal={handleOpenZipModal}

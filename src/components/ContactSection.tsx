@@ -44,11 +44,11 @@ export const ContactSection: React.FC = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0c0c12] border border-[#B38728]/40 group-hover:border-[#BF953F] flex items-center justify-center flex-shrink-0 transition-all duration-300 shadow-sm group-hover:shadow-[0_0_15px_rgba(214,41,118,0.3)]">
                   <InstagramIcon className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                 </div>
-                <div>
+                <div className="min-w-0 flex-1">
                   <h4 className="text-xs font-bold uppercase tracking-wider text-neutral-400 group-hover:text-gold font-sans transition-colors">
                     INSTAGRAM DM
                   </h4>
-                  <div className="text-base font-serif font-bold text-white group-hover:text-gold transition-colors tracking-wide">
+                  <div className="text-base font-serif font-bold text-white group-hover:text-gold transition-colors tracking-wide [overflow-wrap:anywhere] [word-break:break-word]">
                     @apex_ductcleaning
                   </div>
                   <p className="text-[11px] text-neutral-500 group-hover:text-neutral-300 transition-colors mt-0.5">
@@ -61,13 +61,13 @@ export const ContactSection: React.FC = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#BF953F]/15 border border-[#BF953F]/40 flex items-center justify-center flex-shrink-0 text-gold">
                   <Mail className="w-5 h-5" />
                 </div>
-                <div>
+                <div className="min-w-0 flex-1">
                   <h4 className="text-xs font-bold uppercase tracking-wider text-neutral-400 font-sans">
                     EMAIL INQUIRIES
                   </h4>
                   <a
                     href="mailto:apexductcleaning690@gmail.com"
-                    className="text-base font-serif font-bold text-white hover:text-gold transition-colors tracking-wide"
+                    className="text-base font-serif font-bold text-white hover:text-gold transition-colors tracking-wide block [overflow-wrap:anywhere] [word-break:break-word]"
                   >
                     apexductcleaning690@gmail.com
                   </a>
@@ -79,7 +79,7 @@ export const ContactSection: React.FC = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#BF953F]/15 border border-[#BF953F]/40 flex items-center justify-center flex-shrink-0 text-gold">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <div>
+                <div className="min-w-0 flex-1">
                   <h4 className="text-xs font-bold uppercase tracking-wider text-neutral-400 font-sans">
                     HOUSTON, TEXAS
                   </h4>
