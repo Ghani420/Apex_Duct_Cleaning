@@ -35,6 +35,8 @@ export const LeadForm: React.FC<LeadFormProps> = ({
     address: '',
     zip_code: initialZip,
     service: mapToServiceNeeded(initialService),
+    preferred_date: '',
+    preferred_time: '',
     message: '',
   });
 
@@ -88,6 +90,14 @@ export const LeadForm: React.FC<LeadFormProps> = ({
       newErrors.service = 'Please select a service needed.';
     }
 
+    if (!formData.preferred_date.trim()) {
+      newErrors.preferred_date = 'Preferred date is required.';
+    }
+
+    if (!formData.preferred_time.trim()) {
+      newErrors.preferred_time = 'Preferred time is required.';
+    }
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -101,7 +111,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
     setSubmitError(null);
 
     // Standard payload matches EmailJS template variables:
-    // {{name}}, {{email}}, {{phone}}, {{service_address}}, {{zip}}, {{service_needed}}, {{message}}
+    // {{name}}, {{email}}, {{phone}}, {{service_address}}, {{zip}}, {{service_needed}}, {{preferred_date}}, {{preferred_time}}, {{message}}
     const leadPayload: LeadFormData = {
       name: formData.name.trim(),
       email: formData.email.trim(),
@@ -109,6 +119,8 @@ export const LeadForm: React.FC<LeadFormProps> = ({
       address: formData.address.trim(),
       zip_code: formData.zip_code.trim(),
       service: formData.service,
+      preferred_date: formData.preferred_date.trim(),
+      preferred_time: formData.preferred_time.trim(),
       message: formData.message.trim(),
     };
 
@@ -153,6 +165,8 @@ export const LeadForm: React.FC<LeadFormProps> = ({
       address: '',
       zip_code: '',
       service: 'Air Duct Cleaning',
+      preferred_date: '',
+      preferred_time: '',
       message: '',
     });
     setErrors({});
@@ -349,6 +363,51 @@ export const LeadForm: React.FC<LeadFormProps> = ({
           ))}
         </select>
         {errors.service && <p className="text-red-400 text-xs mt-1">{errors.service}</p>}
+      </div>
+
+      {/* PREFERRED DATE & PREFERRED TIME */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+        <div className="min-w-0">
+          <label htmlFor={`${idPrefix}-preferred_date`} className={labelClass}>
+            PREFERRED DATE <span className="text-gold">*</span>
+          </label>
+          <input
+            id={`${idPrefix}-preferred_date`}
+            name="preferred_date"
+            type="date"
+            required
+            value={formData.preferred_date}
+            onChange={(e) => {
+              setFormData({ ...formData, preferred_date: e.target.value });
+              if (errors.preferred_date) setErrors({ ...errors, preferred_date: undefined });
+            }}
+            className={`w-full max-w-full min-w-0 block appearance-none [color-scheme:dark] ${inputPadding} bg-black/60 border rounded-xl text-white text-sm focus:outline-none transition-colors ${
+              errors.preferred_date ? 'border-red-500' : 'border-neutral-800 focus:border-[#BF953F]'
+            }`}
+          />
+          {errors.preferred_date && <p className="text-red-400 text-xs mt-1">{errors.preferred_date}</p>}
+        </div>
+
+        <div className="min-w-0">
+          <label htmlFor={`${idPrefix}-preferred_time`} className={labelClass}>
+            PREFERRED TIME <span className="text-gold">*</span>
+          </label>
+          <input
+            id={`${idPrefix}-preferred_time`}
+            name="preferred_time"
+            type="time"
+            required
+            value={formData.preferred_time}
+            onChange={(e) => {
+              setFormData({ ...formData, preferred_time: e.target.value });
+              if (errors.preferred_time) setErrors({ ...errors, preferred_time: undefined });
+            }}
+            className={`w-full max-w-full min-w-0 block appearance-none [color-scheme:dark] ${inputPadding} bg-black/60 border rounded-xl text-white text-sm focus:outline-none transition-colors ${
+              errors.preferred_time ? 'border-red-500' : 'border-neutral-800 focus:border-[#BF953F]'
+            }`}
+          />
+          {errors.preferred_time && <p className="text-red-400 text-xs mt-1">{errors.preferred_time}</p>}
+        </div>
       </div>
 
       {/* 7. MESSAGE */}

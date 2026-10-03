@@ -30,6 +30,8 @@ export interface EmailSubmissionResult {
  * - zip: {{zip}}
  * - service_address: {{service_address}}
  * - service_needed: {{service_needed}}
+ * - preferred_date: {{preferred_date}}
+ * - preferred_time: {{preferred_time}}
  * - message: {{message}}
  * - reply_to: {{email}}
  */
@@ -42,6 +44,8 @@ export async function sendLeadEmail(formData: LeadFormData): Promise<EmailSubmis
     zip: formData.zip_code.trim(),
     service_address: formData.address.trim(),
     service_needed: formData.service,
+    preferred_date: formData.preferred_date.trim(),
+    preferred_time: formData.preferred_time.trim(),
     message: formData.message?.trim() || 'No additional message provided.',
     reply_to: formData.email.trim(),
 

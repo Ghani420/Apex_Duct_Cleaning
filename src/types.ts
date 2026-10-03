@@ -84,7 +84,7 @@ export interface FaqItem {
 
 /**
  * Standardized Lead Form Data Structure for EmailJS integration
- * Exact variables: {{name}}, {{email}}, {{phone}}, {{address}}, {{zip_code}}, {{service}}, {{message}}
+ * Exact variables: {{name}}, {{email}}, {{phone}}, {{address}}, {{zip_code}}, {{service}}, {{preferred_date}}, {{preferred_time}}, {{message}}
  */
 export interface LeadFormData {
   name: string;
@@ -93,6 +93,8 @@ export interface LeadFormData {
   address: string;
   zip_code: string;
   service: ServiceNeeded;
+  preferred_date: string;
+  preferred_time: string;
   message: string;
 }
 
