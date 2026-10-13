@@ -238,7 +238,7 @@ export default function App() {
         }}
       />
 
-      {/* Floating Instagram Button (Bottom-Right, always visible) */}
+      {/* Floating TEXT US Button (Bottom-Right, always visible) */}
       <FloatingInstagramButton />
     </div>
   );
