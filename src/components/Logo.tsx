@@ -30,7 +30,7 @@ export const Logo: React.FC<LogoProps> = ({
     >
       <img
         src={IMAGES.apexOfficialLogo}
-        alt="Apex Duct Cleaning - Clean Air. Better Health. Safer Home."
+        alt="Apex Duct Cleaning - Professional Air Duct, Dryer Vent & HVAC Cleaning Services"
         referrerPolicy="no-referrer"
         className={`${sizeClasses[size]} object-contain object-left`}
         loading="eager"

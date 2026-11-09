@@ -40,12 +40,12 @@ export const Introduction: React.FC<IntroductionProps> = ({
 
             {/* Paragraph 1 */}
             <p className="text-lg sm:text-xl font-light text-neutral-200 leading-relaxed">
-              Apex Duct Cleaning provides professional residential air duct, dryer vent and HVAC cleaning services for homeowners across the United States.
+              Apex Duct Cleaning provides professional residential air duct cleaning, dryer vent cleaning, and HVAC system maintenance services for homeowners across the United States.
             </p>
 
             {/* Paragraph 2 */}
             <p className="text-base text-neutral-400 leading-relaxed font-normal">
-              Our goal is simple: provide professional service that helps homeowners maintain cleaner ventilation systems and better airflow throughout their homes.
+              Our certified ventilation specialists help homeowners eliminate accumulated dust, pet dander, and allergens to significantly improve indoor air quality and restore optimal HVAC airflow throughout your home.
             </p>
 
             {/* 3 Core Highlights */}
@@ -95,7 +95,7 @@ export const Introduction: React.FC<IntroductionProps> = ({
               <div className="relative rounded-2xl overflow-hidden border border-[#B38728]/35 shadow-[0_20px_50px_rgba(0,0,0,0.85)] bg-[#0c0c0e]">
                 <img
                   src={IMAGES.aboutTech}
-                  alt="Apex Duct Cleaning Certified Ventilation Technician with Air Quality Monitor"
+                  alt="Apex Duct Cleaning certified technician inspecting residential air ducts and indoor air quality"
                   referrerPolicy="no-referrer"
                   className="w-full h-auto aspect-square object-cover object-top hover:scale-[1.02] transition-transform duration-700 filter brightness-100"
                 />

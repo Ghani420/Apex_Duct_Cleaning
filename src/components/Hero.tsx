@@ -36,7 +36,7 @@ export const Hero: React.FC<HeroProps> = ({
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <img
           src={IMAGES.heroTech}
-          alt="Professional Apex Duct Cleaning Technician servicing residential ventilation and dryer system"
+          alt="Professional air duct cleaning technician servicing residential HVAC ventilation and dryer vent system across the USA"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover object-[72%_center] sm:object-[68%_center] md:object-[65%_center] lg:object-[75%_center] xl:object-[80%_center] filter brightness-[0.72] contrast-[1.08] transition-transform duration-1000 ease-out"
         />

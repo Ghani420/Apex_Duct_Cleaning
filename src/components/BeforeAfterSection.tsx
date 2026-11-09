@@ -83,7 +83,7 @@ export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({
                     {/* AFTER Image (Full Background) */}
                     <img
                       src={item.afterImage}
-                      alt={`${item.category} After Cleaning`}
+                      alt={`${item.category} after professional cleaning showing clean ventilation and restored airflow`}
                       referrerPolicy="no-referrer"
                       className="absolute inset-0 w-full h-full object-cover pointer-events-none"
                     />
@@ -101,7 +101,7 @@ export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({
                     >
                       <img
                         src={item.beforeImage}
-                        alt={`${item.category} Before Cleaning`}
+                        alt={`${item.category} before cleaning with accumulated dust, debris, and lint buildup`}
                         referrerPolicy="no-referrer"
                         className="absolute inset-0 w-full h-full object-cover max-w-none pointer-events-none"
                         style={{ width: '100%', height: '100%', minWidth: '100%' }}

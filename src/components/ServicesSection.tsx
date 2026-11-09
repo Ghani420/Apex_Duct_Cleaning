@@ -54,7 +54,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                 <div className="relative h-56 sm:h-64 w-full overflow-hidden">
                   <img
                     src={service.image}
-                    alt={service.title}
+                    alt={`${service.title} - Professional residential air duct, dryer vent and HVAC cleaning services by Apex Duct Cleaning`}
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover object-center transform transition-transform duration-700 ease-out group-hover:scale-110 filter brightness-90 group-hover:brightness-100"
                   />

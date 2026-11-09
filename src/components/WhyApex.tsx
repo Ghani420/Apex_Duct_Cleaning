@@ -52,7 +52,7 @@ export const WhyApex: React.FC = () => {
           </h2>
 
           <p className="text-base sm:text-lg text-neutral-300 font-normal">
-            Delivering an elevated standard of residential air hygiene and homeowner satisfaction.
+            Delivering an elevated standard of residential air duct cleaning, dryer vent safety, and HVAC efficiency across the USA.
           </p>
         </div>
 

@@ -29,7 +29,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
               <div className="relative rounded-3xl overflow-hidden border border-[#B38728]/35 shadow-[0_20px_60px_rgba(0,0,0,0.9)] bg-[#0e0e12]">
                 <img
                   src={IMAGES.inspection}
-                  alt="Apex Duct Cleaning Certified Specialist inspecting home air ventilation"
+                  alt="Apex Duct Cleaning certified specialist inspecting home air duct ventilation and HVAC system"
                   referrerPolicy="no-referrer"
                   className="w-full h-[460px] object-cover object-center hover:scale-105 transition-transform duration-700 filter brightness-95"
                 />
@@ -70,15 +70,15 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
             <div className="w-20 h-1 bg-gradient-to-r from-[#BF953F] to-transparent rounded-full" />
 
             <p className="text-lg text-neutral-200 leading-relaxed font-light">
-              At Apex Duct Cleaning, we believe homeowners deserve professional, dependable and transparent service.
+              At Apex Duct Cleaning, we believe homeowners deserve professional, dependable, and transparent residential duct cleaning services.
             </p>
 
             <p className="text-base text-neutral-300 leading-relaxed font-normal">
-              Our focus is residential air duct, dryer vent and HVAC cleaning, helping homeowners maintain cleaner ventilation systems and better airflow throughout their homes.
+              Our core specialty is whole-home air duct cleaning, dryer vent lint extraction, and HVAC system cleaning—helping families eliminate airborne dust, breathe cleaner indoor air, and optimize heating and cooling efficiency.
             </p>
 
             <p className="text-base text-neutral-400 leading-relaxed font-normal">
-              We proudly serve homeowners across the United States and make it easy to check availability and request service online.
+              We proudly serve residential homeowners across the United States with transparent pricing, certified equipment, and instant online ZIP code availability verification.
             </p>
 
             {/* Core Values Bullet Grid */}

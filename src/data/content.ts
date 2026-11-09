@@ -31,14 +31,14 @@ export const SERVICES_DATA: ServiceItem[] = [
     id: 'hvac-cleaning',
     title: 'HVAC CLEANING',
     badge: 'HEATING & COOLING EFFICIENCY',
-    shortDescription: 'Professional HVAC cleaning to help remove accumulated dust and buildup from key areas of your heating and cooling system.',
-    fullDescription: 'Our deep HVAC cleaning addresses the coils, blower motor, plenum, heat exchangers, and air handlers. Removing dust and debris restores optimum airflow and boosts thermal transfer efficiency.',
+    shortDescription: 'Comprehensive HVAC system cleaning targeting furnace blower motors, evaporator coils, heat exchangers, and air plenums to restore peak thermal efficiency and eliminate trapped particulate buildup.',
+    fullDescription: 'Our deep HVAC cleaning addresses the coils, blower motor, plenum, heat exchangers, and air handlers. Removing dust and debris restores optimum airflow, lowers electricity consumption, and boosts equipment lifespan.',
     image: hvacUnitImg,
     benefits: [
-      'Increases system energy efficiency',
-      'Removes deep furnace & coil debris',
-      'Extends HVAC equipment lifespan',
-      'Minimizes strain on blower motor'
+      'Increases HVAC energy efficiency & lowers utility bills',
+      'Deep cleans evaporator coils, blower fan & furnace plenum',
+      'Common signs needed: Weak airflow, higher energy bills, musty odors',
+      'Why Apex: HEPA negative vacuum extraction & certified technicians'
     ],
     ctaText: 'GET QUOTE'
   },
@@ -46,14 +46,14 @@ export const SERVICES_DATA: ServiceItem[] = [
     id: 'air-duct-cleaning',
     title: 'AIR DUCT CLEANING',
     badge: 'WHOLE-HOME AIR PURITY',
-    shortDescription: 'Professional air duct cleaning designed to help remove accumulated dust and debris and support cleaner airflow throughout your home.',
-    fullDescription: 'Using powerful negative air vacuum systems and rotary agitating whips, we dislodge pet dander, drywall dust, pollen, and microscopic particulates from every supply and return vent trunk line.',
+    shortDescription: 'Professional residential air duct cleaning utilizing high-powered negative air HEPA extraction and rotary whips to eliminate accumulated dust, pet dander, allergens, and debris from all supply and return vents.',
+    fullDescription: 'Using powerful negative air vacuum systems and rotary agitating whips, we dislodge pet dander, drywall dust, pollen, and microscopic particulates from every supply and return vent trunk line, significantly improving indoor air quality.',
     image: airDuctImg,
     benefits: [
-      'Eliminates trapped dust & allergens',
-      'Improves balanced room airflow',
-      'Reduces airborne dust settling on furniture',
-      'Sanitizes supply and return duct trunks'
+      'Eliminates trapped dust, allergens, pet dander & pollen',
+      'Improves indoor air quality & balanced room-to-room airflow',
+      'Common signs needed: Dust settling fast, allergic symptoms, visible vent debris',
+      'Why Apex: NADCA-standard containment with zero home mess'
     ],
     ctaText: 'GET QUOTE'
   },
@@ -61,14 +61,14 @@ export const SERVICES_DATA: ServiceItem[] = [
     id: 'dryer-vent-cleaning',
     title: 'DRYER VENT CLEANING',
     badge: 'FIRE SAFETY & FAST DRYING',
-    shortDescription: 'Professional dryer vent cleaning to help remove lint buildup and restricted airflow and support better dryer performance.',
+    shortDescription: 'Professional dryer vent cleaning removing combustible lint blockages and restricted airflow from dryer to exterior exhaust cap to safeguard your home against house fires and accelerate drying times.',
     fullDescription: 'Clogged dryer lines are a leading source of residential house fires and inflated electricity bills. We clear the full exterior exhaust path from the dryer connection to the roof or exterior wall cap.',
     image: dryerVentImg,
     benefits: [
-      'Mitigates dangerous residential fire hazards',
-      'Dries clothing loads significantly faster',
-      'Reduces high energy & electricity costs',
-      'Prevents dryer overheating & component wear'
+      'Mitigates hazardous residential dryer lint fire risks',
+      'Restores rapid drying cycles & saves laundry electricity',
+      'Common signs needed: Clothes hot but damp, burning smell, long dry times',
+      'Why Apex: Complete wall-to-roof exhaust line cleaning'
     ],
     ctaText: 'GET QUOTE'
   },
@@ -76,14 +76,14 @@ export const SERVICES_DATA: ServiceItem[] = [
     id: 'free-inspection',
     title: 'FREE INSPECTION',
     badge: 'NO OBLIGATION ASSESSMENT',
-    shortDescription: 'Not sure what your home needs? Let Apex inspect your system and help you determine the appropriate service.',
+    shortDescription: 'Comprehensive fiber-optic video camera assessment of your home\'s air duct system and dryer vent exhaust to identify internal contamination, airflow restrictions, and exact service needs with zero obligation.',
     fullDescription: 'Our certified technicians conduct high-definition fiber optic video inspections of your ductwork and ventilation systems to clearly show you the actual internal condition before any work begins.',
     image: inspectionImg,
     benefits: [
-      'HD digital borescope camera assessment',
-      'Zero cost, zero obligation transparent review',
-      'Airflow pressure & velocity check',
-      'Customized recommendations for your home'
+      'High-definition borescope camera inspection of supply & returns',
+      'Accurate diagnosis of dust, debris & lint buildup',
+      'Transparent findings with upfront, honest service options',
+      'Why Apex: 100% free inspection with zero sales pressure'
     ],
     ctaText: 'GET FREE INSPECTION'
   }
@@ -125,37 +125,37 @@ export const WHY_APEX_DATA: WhyApexItem[] = [
   {
     id: 'prof-service',
     title: 'PROFESSIONAL SERVICE',
-    description: 'Professional residential cleaning performed by trained, background-checked ventilation technicians.',
+    description: 'Professional residential air duct, dryer vent and HVAC cleaning performed by trained, background-checked ventilation technicians.',
     iconName: 'ShieldCheck'
   },
   {
     id: 'usa-coverage',
     title: 'USA-WIDE COVERAGE',
-    description: 'Serving homeowners across the United States with dedicated regional service dispatchers.',
+    description: 'Serving homeowners across the United States with dedicated regional service dispatchers and certified local crews.',
     iconName: 'MapPin'
   },
   {
     id: 'free-inspection',
     title: 'FREE INSPECTION',
-    description: 'Start with an inspection when you\'re unsure what service you need. 100% transparent and zero obligation.',
+    description: 'Start with an inspection when you\'re unsure what service you need. 100% transparent and zero obligation with fiber-optic video diagnosis.',
     iconName: 'SearchCheck'
   },
   {
     id: 'customer-first',
     title: 'CUSTOMER FIRST',
-    description: 'Professional communication, clear upfront pricing, and homeowner-focused respect for your property.',
+    description: 'Professional communication, clear upfront pricing, and homeowner-focused respect for your property with zero hidden charges.',
     iconName: 'HeartHandshake'
   },
   {
     id: 'cleaner-airflow',
     title: 'CLEANER AIRFLOW',
-    description: 'Helping homeowners maintain cleaner ventilation systems and optimal breathing environments.',
+    description: 'Helping homeowners eliminate dust, pet dander and allergens to maintain cleaner ventilation systems and optimal breathing environments.',
     iconName: 'Wind'
   },
   {
     id: 'easy-online-request',
     title: 'EASY ONLINE REQUEST',
-    description: 'Check your ZIP code in seconds and request your free quote or inspection seamlessly online.',
+    description: 'Check your ZIP code in seconds and request your free quote or inspection seamlessly online with fast dispatch confirmation.',
     iconName: 'Laptop'
   }
 ];
@@ -185,36 +185,44 @@ export const HOW_IT_WORKS_STEPS: StepItem[] = [
 
 export const FAQ_DATA: FaqItem[] = [
   {
-    question: 'How do I check if Apex serves my area?',
-    answer: 'Simply enter your 5-digit US ZIP code in our availability tool on this page. Apex Duct Cleaning proudly serves residential homeowners nationwide across the United States with our extensive network of certified service technicians.'
+    question: 'How do I check if Apex Duct Cleaning serves my area?',
+    answer: 'Simply enter your 5-digit US ZIP code in our availability tool on this page. Apex Duct Cleaning proudly serves residential homeowners nationwide across the United States through an established network of certified ventilation specialists and regional dispatch teams.'
   },
   {
-    question: 'What services does Apex provide?',
-    answer: 'We specialize in whole-home Air Duct Cleaning, Dryer Vent Exhaust Cleaning, HVAC Furnace & Coil Cleaning, and Free Pre-Service Video Inspections. We also provide antimicrobial sanitization treatments upon request.'
+    question: 'What services does Apex Duct Cleaning provide?',
+    answer: 'We specialize in whole-home Air Duct Cleaning, Dryer Vent Exhaust Cleaning, HVAC Furnace & Coil Cleaning, and Free Pre-Service Video Camera Inspections. Every service is performed according to strict NADCA indoor air hygiene standards.'
   },
   {
     question: 'Do you offer free inspections?',
-    answer: 'Yes! If you are uncertain about the current cleanliness or condition of your ductwork or dryer vent, you can book a 100% Free Inspection. Our technician inspects your system using fiber-optic cameras with zero obligation.'
+    answer: 'Yes! If you are uncertain about the current cleanliness or condition of your ductwork or dryer vent, you can book a 100% Free Inspection. Our certified technician inspects your system using high-definition fiber-optic cameras with zero cost and zero obligation.'
   },
   {
-    question: 'How do I request a quote?',
-    answer: 'You can request a free quote anytime online through our quote form, by entering your ZIP code, or by contacting our customer care line. We provide prompt, transparent estimates tailored to your home layout.'
+    question: 'How much does air duct and dryer vent cleaning cost, and how do I request a quote?',
+    answer: 'Pricing depends on the square footage of your home, number of HVAC systems, and the total count of supply and return vents. You can request a free, upfront estimate anytime through our online form or by checking your ZIP code. We believe in transparent pricing with no hidden fees or unexpected upsells.'
   },
   {
-    question: 'Do you serve homeowners across the USA?',
-    answer: 'Yes. Apex Duct Cleaning is established to serve residential homeowners across the United States. Our regional teams are equipped with industrial-grade negative air pressure machines and HEPA filtration gear.'
+    question: 'Do you serve homeowners across the entire USA?',
+    answer: 'Yes. Apex Duct Cleaning is structured to serve residential homeowners across the United States. Our regional teams are equipped with industrial-grade negative air pressure machines and HEPA filtration gear to deliver consistent, top-tier service nationwide.'
   },
   {
-    question: 'How often should dryer vents be cleaned?',
-    answer: 'The National Fire Protection Association (NFPA) recommends having residential dryer vents professionally inspected and cleaned at least once per year. Homes with large families, frequent laundry cycles, or long vent runs should consider cleaning every 6 to 9 months to prevent lint fire risks and keep appliances working efficiently.'
+    question: 'How often should residential air ducts be cleaned?',
+    answer: 'The National Air Duct Cleaners Association (NADCA) recommends having residential air ducts professionally cleaned every 2 to 3 years. Homes with pets, residents with asthma or allergies, recent home renovations, or noticeable dust accumulation should schedule cleaning more frequently.'
   },
   {
-    question: 'How long does a typical air duct cleaning appointment take?',
-    answer: 'A standard residential air duct cleaning service generally takes between 2 to 4 hours depending on the square footage of your home, number of HVAC systems, and the total count of supply and return registers.'
+    question: 'How often should dryer vents be cleaned and what are warning signs of a clogged vent?',
+    answer: 'The National Fire Protection Association (NFPA) recommends professional dryer vent cleaning at least once per year. Key warning signs that your dryer vent is clogged include: clothes taking longer than one cycle to dry, the dryer or laundry room becoming excessively hot, a burning lint odor, or the exterior vent flap failing to open during operation.'
   },
   {
-    question: 'Will duct cleaning make a mess in my home?',
-    answer: 'Never. Our technicians use clean drop cloths, corner protectors, shoe covers, and seal all registers while maintaining continuous negative vacuum pressure. All dust and debris is pulled directly into our sealed HEPA filtration collection units outside or in our containment units.'
+    question: 'What are the common signs my HVAC system or air ducts need professional cleaning?',
+    answer: 'Common signs include: visible dust puffs when the HVAC turns on, dust settling on furniture shortly after dusting, persistent stale or musty odors throughout the home, uneven airflow between rooms, rising heating or cooling bills, and worsening morning allergy symptoms.'
+  },
+  {
+    question: 'Will air duct cleaning make a mess in my home?',
+    answer: 'Never. Our technicians use clean drop cloths, corner protectors, and shoe covers while maintaining continuous negative air HEPA vacuum pressure. All dislodged dust, pet dander, and contaminants are pulled directly into sealed collection units so none enters your living space.'
+  },
+  {
+    question: 'Can professional air duct cleaning improve indoor air quality and lower energy bills?',
+    answer: 'Yes. Removing pounds of accumulated dust and debris eliminates restrictions on airflow, allowing your HVAC blower and coils to transfer heat and circulate air with significantly less effort. This improves indoor air quality, reduces airborne allergens, and helps lower monthly utility costs.'
   }
 ];
 
