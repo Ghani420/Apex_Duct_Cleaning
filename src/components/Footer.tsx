@@ -232,6 +232,24 @@ export const Footer: React.FC<FooterProps> = ({
               </li>
               <li>
                 <button
+                  onClick={() => onSelectService('chimney-cleaning')}
+                  className="hover:text-gold transition-colors uppercase text-left flex items-center justify-between w-full group cursor-pointer"
+                >
+                  <span>Chimney Cleaning</span>
+                  <span className="text-[10px] text-gold/70 group-hover:text-gold">Fireplace Safety &rarr;</span>
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => onSelectService('attic-cleaning')}
+                  className="hover:text-gold transition-colors uppercase text-left flex items-center justify-between w-full group cursor-pointer"
+                >
+                  <span>Attic Cleaning</span>
+                  <span className="text-[10px] text-gold/70 group-hover:text-gold">Healthy Home &rarr;</span>
+                </button>
+              </li>
+              <li>
+                <button
                   onClick={() => onSelectService('free-inspection')}
                   className="hover:text-gold transition-colors uppercase text-left flex items-center justify-between w-full group text-gold font-semibold cursor-pointer"
                 >

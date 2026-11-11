@@ -3,6 +3,8 @@ export type ServiceNeeded =
   | 'Dryer Vent Cleaning'
   | 'HVAC Cleaning'
   | 'Free Inspection'
+  | 'Chimney Cleaning'
+  | 'Attic Cleaning'
   | 'Multiple Services'
   | 'Not Sure';
 
@@ -12,6 +14,8 @@ export type ServiceType =
   | 'dryer-vent-cleaning'
   | 'hvac-cleaning'
   | 'free-inspection'
+  | 'chimney-cleaning'
+  | 'attic-cleaning'
   | 'multiple-services'
   | 'not-sure'
   | ServiceNeeded;
@@ -21,6 +25,8 @@ export const SERVICE_NEEDED_OPTIONS: ServiceNeeded[] = [
   'Dryer Vent Cleaning',
   'HVAC Cleaning',
   'Free Inspection',
+  'Chimney Cleaning',
+  'Attic Cleaning',
   'Multiple Services',
   'Not Sure',
 ];
@@ -30,6 +36,8 @@ export const mapToServiceNeeded = (val?: string): ServiceNeeded => {
   const lower = val.toLowerCase().replace(/[-_]/g, ' ');
   if (lower.includes('dryer')) return 'Dryer Vent Cleaning';
   if (lower.includes('hvac')) return 'HVAC Cleaning';
+  if (lower.includes('chimney') || lower.includes('fireplace')) return 'Chimney Cleaning';
+  if (lower.includes('attic')) return 'Attic Cleaning';
   if (lower.includes('free') || lower.includes('inspect')) return 'Free Inspection';
   if (lower.includes('multiple') || lower.includes('package')) return 'Multiple Services';
   if (lower.includes('not sure')) return 'Not Sure';

@@ -3,6 +3,8 @@ import airDuctImg from '../assets/images/air_duct_clean_1786890544910.jpg';
 import dryerVentImg from '../assets/images/dryer_vent_card_1786890559166.jpg';
 import hvacUnitImg from '../assets/images/hvac_unit_card_1786890572596.jpg';
 import inspectionImg from '../assets/images/inspection_card_1786890589144.jpg';
+import chimneyCleanImg from '../assets/images/chimney_clean_card_1794411125937.jpg';
+import atticCleanImg from '../assets/images/attic_clean_card_1794411125764.jpg';
 import ductDirtyImg from '../assets/images/duct_dirty_view_1786890605538.jpg';
 import ductCleanImg from '../assets/images/duct_clean_view_1786890618668.jpg';
 import dryerDirtyImg from '../assets/images/dryer_dirty_view_1786890631041.jpg';
@@ -18,6 +20,8 @@ export const IMAGES = {
   dryerVent: dryerVentImg,
   hvacUnit: hvacUnitImg,
   inspection: inspectionImg,
+  chimneyClean: chimneyCleanImg,
+  atticClean: atticCleanImg,
   ductDirty: ductDirtyImg,
   ductClean: ductCleanImg,
   dryerDirty: dryerDirtyImg,
@@ -86,6 +90,36 @@ export const SERVICES_DATA: ServiceItem[] = [
       'Why Apex: 100% free inspection with zero sales pressure'
     ],
     ctaText: 'GET FREE INSPECTION'
+  },
+  {
+    id: 'chimney-cleaning',
+    title: 'CHIMNEY CLEANING',
+    badge: 'FIREPLACE SAFETY & CREOSOTE REMOVAL',
+    shortDescription: 'Professional residential chimney sweeping and flue cleaning to thoroughly remove toxic soot, combustible creosote deposits, and debris for safer, cleaner fireplace operation.',
+    fullDescription: 'Our specialized chimney cleaning service utilizes high-powered rotary brushes, specialized rods, and commercial HEPA vacuum filtration to dislodge dangerous creosote, soot, bird nests, and blockages from the chimney cap down to the smoke shelf and firebox.',
+    image: chimneyCleanImg,
+    benefits: [
+      'Removes flammable creosote & toxic soot accumulation',
+      'Eliminates dangerous chimney & fireplace house fire hazards',
+      'Common signs needed: Smoke drafting into room, strong soot odor, visible buildup',
+      'Why Apex: Certified HEPA dustless sweeping with zero indoor mess'
+    ],
+    ctaText: 'GET QUOTE'
+  },
+  {
+    id: 'attic-cleaning',
+    title: 'ATTIC CLEANING',
+    badge: 'HEALTHY HOME & INSULATION HYGIENE',
+    shortDescription: 'Comprehensive residential attic cleaning to remove deep dust, airborne allergens, insulation-related debris, and pest contaminants, restoring whole-home air quality and cleanliness.',
+    fullDescription: 'Our professional attic restoration and deep cleaning service uses heavy-duty negative air suction systems to safely extract decades of dust, deteriorating insulation particles, rodent droppings, and contaminants trapped in your attic floor and rafters.',
+    image: atticCleanImg,
+    benefits: [
+      'Removes heavy dust, insulation debris & trapped contaminants',
+      'Prevents polluted attic air and allergens from entering living areas',
+      'Common signs needed: Musty attic odors, rodent droppings, uneven home temperatures',
+      'Why Apex: Complete attic sanitization & negative-air containment'
+    ],
+    ctaText: 'GET QUOTE'
   }
 ];
 
