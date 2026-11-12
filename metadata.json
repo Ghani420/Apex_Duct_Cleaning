@@ -1,0 +1,6 @@
+{
+  "name": "Apex Duct Cleaning",
+  "description": "Premium residential Air Duct, Dryer Vent & HVAC Cleaning services across the USA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
