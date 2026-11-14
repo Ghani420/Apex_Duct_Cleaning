@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, MapPin, Sparkles } from 'lucide-react';
+import { Mail, Sparkles } from 'lucide-react';
 import { InstagramIcon } from './InstagramIcon';
 import { LeadForm } from './LeadForm';
 
@@ -72,24 +72,6 @@ export const ContactSection: React.FC = () => {
                     apexductcleaning690@gmail.com
                   </a>
                   <p className="text-[11px] text-neutral-500 mt-0.5">Average response under 30 minutes</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 p-4.5 sm:p-5 rounded-xl glass-card transition-colors">
-                <div className="w-10 h-10 rounded-lg bg-[#BF953F]/15 border border-[#BF953F]/40 flex items-center justify-center flex-shrink-0 text-gold">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <div className="min-w-0 flex-1">
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-neutral-400 font-sans">
-                    HOUSTON, TEXAS
-                  </h4>
-                  <p className="text-base font-serif font-bold text-white tracking-wide">
-                    2351 Lancashire Ct
-                  </p>
-                  <p className="text-sm font-semibold text-neutral-300">
-                    Houston, TX 77002
-                  </p>
-                  <p className="text-[11px] text-neutral-500 mt-0.5">Serving Homeowners in Houston, Texas</p>
                 </div>
               </div>
             </div>

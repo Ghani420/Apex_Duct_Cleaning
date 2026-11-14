@@ -1,6 +1,6 @@
 import React from 'react';
 import { Logo } from './Logo';
-import { Mail, MapPin, ShieldCheck, ArrowUp, Facebook } from 'lucide-react';
+import { Mail, ShieldCheck, ArrowUp, Facebook } from 'lucide-react';
 import { InstagramIcon } from './InstagramIcon';
 import { ServiceType } from '../types';
 
@@ -98,19 +98,6 @@ export const Footer: React.FC<FooterProps> = ({
 
             {/* Direct Contact Details */}
             <div className="pt-2 flex flex-col space-y-3 text-xs">
-              <div className="flex items-start gap-2.5 text-neutral-300">
-                <MapPin className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" />
-                <div>
-                  <span className="font-bold text-white uppercase tracking-wider text-[11px] block">
-                    HOUSTON, TEXAS
-                  </span>
-                  <span className="text-neutral-300 block">2351 Lancashire Ct</span>
-                  <span className="text-neutral-300 block">Houston, TX 77002</span>
-                  <span className="text-[11px] text-neutral-500 block mt-0.5">
-                    Serving Homeowners in Houston, Texas
-                  </span>
-                </div>
-              </div>
               <a
                 href={INSTAGRAM_URL}
                 target="_blank"
