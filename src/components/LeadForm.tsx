@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import {
   LeadFormData,
   ServiceNeeded,
@@ -8,6 +8,11 @@ import {
 } from '../types';
 import { ArrowRight, ShieldCheck, CheckCircle2, AlertCircle } from 'lucide-react';
 import { sendLeadEmail } from '../lib/emailjs';
+import {
+  DatePickerField,
+  isSaturdayDate,
+  SATURDAY_CLOSED_MESSAGE,
+} from './DatePickerField';
 
 export interface LeadFormProps {
   initialZip?: string;
@@ -92,6 +97,8 @@ export const LeadForm: React.FC<LeadFormProps> = ({
 
     if (!formData.preferred_date.trim()) {
       newErrors.preferred_date = 'Preferred date is required.';
+    } else if (isSaturdayDate(formData.preferred_date)) {
+      newErrors.preferred_date = SATURDAY_CLOSED_MESSAGE;
     }
 
     if (!formData.preferred_time.trim()) {
@@ -102,9 +109,31 @@ export const LeadForm: React.FC<LeadFormProps> = ({
     return Object.keys(newErrors).length === 0;
   };
 
+  const handlePreferredDateChange = useCallback((newDate: string) => {
+    if (isSaturdayDate(newDate)) {
+      setFormData((prev) => ({ ...prev, preferred_date: '' }));
+      setErrors((prev) => ({ ...prev, preferred_date: SATURDAY_CLOSED_MESSAGE }));
+      return;
+    }
+    setFormData((prev) => ({ ...prev, preferred_date: newDate }));
+    setErrors((prev) => (prev.preferred_date ? { ...prev, preferred_date: undefined } : prev));
+  }, []);
+
+  const handleSaturdayAttempt = useCallback(() => {
+    setFormData((prev) =>
+      isSaturdayDate(prev.preferred_date) ? { ...prev, preferred_date: '' } : prev
+    );
+    setErrors((prev) => ({ ...prev, preferred_date: SATURDAY_CLOSED_MESSAGE }));
+  }, []);
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (isSubmitting) return;
+    if (isSaturdayDate(formData.preferred_date)) {
+      setFormData((prev) => ({ ...prev, preferred_date: '' }));
+      setErrors((prev) => ({ ...prev, preferred_date: SATURDAY_CLOSED_MESSAGE }));
+      return;
+    }
     if (!validate()) return;
 
     setIsSubmitting(true);
@@ -371,19 +400,15 @@ export const LeadForm: React.FC<LeadFormProps> = ({
           <label htmlFor={`${idPrefix}-preferred_date`} className={labelClass}>
             PREFERRED DATE <span className="text-gold">*</span>
           </label>
-          <input
+          <DatePickerField
             id={`${idPrefix}-preferred_date`}
             name="preferred_date"
-            type="date"
-            required
             value={formData.preferred_date}
-            onChange={(e) => {
-              setFormData({ ...formData, preferred_date: e.target.value });
-              if (errors.preferred_date) setErrors({ ...errors, preferred_date: undefined });
-            }}
-            className={`w-full max-w-full min-w-0 block appearance-none [color-scheme:dark] ${inputPadding} bg-black/60 border rounded-xl text-white text-sm focus:outline-none transition-colors ${
-              errors.preferred_date ? 'border-red-500' : 'border-neutral-800 focus:border-[#BF953F]'
-            }`}
+            onChange={handlePreferredDateChange}
+            onSaturdayAttempt={handleSaturdayAttempt}
+            error={errors.preferred_date}
+            inputPadding={inputPadding}
+            required
           />
           {errors.preferred_date && <p className="text-red-400 text-xs mt-1">{errors.preferred_date}</p>}
         </div>

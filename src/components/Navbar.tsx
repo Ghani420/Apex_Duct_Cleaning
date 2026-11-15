@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Logo } from './Logo';
-import { Menu, X, Shield, ArrowRight, MapPin, CheckCircle, Phone } from 'lucide-react';
+import { Menu, X, Shield, ArrowRight, MapPin, CheckCircle, MessageSquare } from 'lucide-react';
 
 interface NavbarProps {
   onOpenZipModal: () => void;
@@ -129,13 +129,14 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* 3. DESKTOP RIGHT ACTION BUTTONS */}
             <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
               <a
-                id="nav-call-now-btn"
-                href="tel:+18182785848"
+                id="nav-text-us-btn"
+                href="sms:+18182785848"
                 className="whitespace-nowrap px-4 py-2.5 rounded-xl bg-black hover:bg-[#0e0e12] text-gold hover:text-white border border-[#B38728]/70 hover:border-[#BF953F] font-bold text-xs tracking-wider uppercase transition-all duration-300 shadow-sm hover:shadow-[0_0_15px_rgba(191,149,63,0.3)] flex items-center gap-2 flex-shrink-0 cursor-pointer"
-                title="Call (818) 278-5848"
+                title="Text Us at +1 (818) 278-5848"
+                aria-label="Text Us at +1 818-278-5848"
               >
-                <Phone className="w-3.5 h-3.5 text-gold flex-shrink-0" />
-                <span>CALL (818) 278-5848</span>
+                <MessageSquare className="w-3.5 h-3.5 text-gold flex-shrink-0" />
+                <span>TEXT US – (818) 278-5848</span>
               </a>
 
               <button
@@ -150,15 +151,16 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             {/* 4. MOBILE & TABLET HEADER CONTROLS (RIGHT) */}
             <div className="flex lg:hidden items-center gap-1.5 sm:gap-2.5">
-              {/* Quick Call Now Button (Mobile/Tablet) */}
+              {/* Quick Text Us Button (Mobile/Tablet) */}
               <a
-                id="mobile-call-now-btn"
-                href="tel:+18182785848"
-                className="whitespace-nowrap px-2 sm:px-3 py-1.5 sm:py-2 bg-black border border-[#B38728]/70 hover:border-gold text-gold hover:text-white rounded-lg font-bold text-[10px] sm:text-xs tracking-wider uppercase shadow-sm transition-all cursor-pointer flex items-center gap-1 sm:gap-1.5"
-                title="Call (818) 278-5848"
+                id="mobile-text-us-btn"
+                href="sms:+18182785848"
+                className="whitespace-nowrap px-1.5 sm:px-3 py-1.5 sm:py-2 bg-black border border-[#B38728]/70 hover:border-gold text-gold hover:text-white rounded-lg font-bold text-[9px] xs:text-[10px] sm:text-xs tracking-normal sm:tracking-wider uppercase shadow-sm transition-all cursor-pointer flex items-center gap-1 sm:gap-1.5 flex-shrink-0"
+                title="Text Us at +1 (818) 278-5848"
+                aria-label="Text Us at +1 818-278-5848"
               >
-                <Phone className="w-3 h-3 text-gold flex-shrink-0" />
-                <span>CALL (818) 278-5848</span>
+                <MessageSquare className="w-3 h-3 text-gold flex-shrink-0" />
+                <span>TEXT US – (818) 278-5848</span>
               </a>
 
               {/* Quick Free Inspection Button */}
