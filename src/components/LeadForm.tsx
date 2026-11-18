@@ -129,7 +129,12 @@ export const LeadForm: React.FC<LeadFormProps> = ({
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (isSubmitting) return;
-    if (isSaturdayDate(formData.preferred_date)) {
+    const domDateInput = e.currentTarget.elements.namedItem('preferred_date') as HTMLInputElement | null;
+    if (
+      isSaturdayDate(formData.preferred_date) ||
+      (domDateInput?.value && isSaturdayDate(domDateInput.value))
+    ) {
+      if (domDateInput) domDateInput.value = '';
       setFormData((prev) => ({ ...prev, preferred_date: '' }));
       setErrors((prev) => ({ ...prev, preferred_date: SATURDAY_CLOSED_MESSAGE }));
       return;

@@ -131,7 +131,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <a
                 id="nav-text-us-btn"
                 href="sms:+18182785848"
-                className="whitespace-nowrap px-4 py-2.5 rounded-xl bg-black hover:bg-[#0e0e12] text-gold hover:text-white border border-[#B38728]/70 hover:border-[#BF953F] font-bold text-xs tracking-wider uppercase transition-all duration-300 shadow-sm hover:shadow-[0_0_15px_rgba(191,149,63,0.3)] flex items-center gap-2 flex-shrink-0 cursor-pointer"
+                className="whitespace-nowrap px-3 xl:px-4 py-2.5 rounded-xl bg-black hover:bg-[#0e0e12] text-gold hover:text-white border border-[#B38728]/70 hover:border-[#BF953F] font-bold text-[11px] xl:text-xs tracking-wide xl:tracking-wider uppercase transition-all duration-300 shadow-sm hover:shadow-[0_0_15px_rgba(191,149,63,0.3)] flex items-center gap-1.5 xl:gap-2 flex-shrink-0 cursor-pointer"
                 title="Text Us at +1 (818) 278-5848"
                 aria-label="Text Us at +1 818-278-5848"
               >
@@ -155,7 +155,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <a
                 id="mobile-text-us-btn"
                 href="sms:+18182785848"
-                className="whitespace-nowrap px-1.5 sm:px-3 py-1.5 sm:py-2 bg-black border border-[#B38728]/70 hover:border-gold text-gold hover:text-white rounded-lg font-bold text-[9px] xs:text-[10px] sm:text-xs tracking-normal sm:tracking-wider uppercase shadow-sm transition-all cursor-pointer flex items-center gap-1 sm:gap-1.5 flex-shrink-0"
+                className="whitespace-nowrap px-1.5 sm:px-3 py-1.5 sm:py-2 bg-black border border-[#B38728]/70 hover:border-gold text-gold hover:text-white rounded-lg font-bold text-[8.5px] min-[400px]:text-[10px] sm:text-xs tracking-tight sm:tracking-wider uppercase shadow-sm transition-all cursor-pointer flex items-center gap-1 sm:gap-1.5 flex-shrink-0"
                 title="Text Us at +1 (818) 278-5848"
                 aria-label="Text Us at +1 818-278-5848"
               >
